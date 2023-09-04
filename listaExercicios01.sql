@@ -104,3 +104,9 @@ SELECT titulo FROM livros;
 -- Selecione todos os nomes de autores nascidos antes de 1900.
 SELECT nome FROM autores WHERE nascimento < '1900-01-01';
 
+--Liste todos os livros escritos por 'J.K. Rowling'.
+SELECT livros.titulo
+FROM livros
+JOIN autores ON livros.autor_id = autores.id
+WHERE autores.nome = 'J.K. Rowling';
+

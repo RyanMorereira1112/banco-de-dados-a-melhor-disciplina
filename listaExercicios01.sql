@@ -183,3 +183,10 @@ GROUP BY autores.nome
 ORDER BY numero_de_livros DESC
 LIMIT 1;
 
+--Determine o produto que gerou a menor receita.
+SELECT produto, SUM(receita) AS receita_total
+FROM vendas
+GROUP BY produto
+ORDER BY receita_total ASC
+LIMIT 1;
+

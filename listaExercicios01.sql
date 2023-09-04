@@ -160,3 +160,8 @@ SELECT alunos.nome, matriculas.curso
 FROM alunos
 LEFT JOIN matriculas ON alunos.id = matriculas.aluno_id;
 
+--Usando LEFT JOIN, selecione todos os autores e seus livros, incluindo autores que não têm livros publicados.
+SELECT autores.nome, livros.titulo
+FROM autores
+LEFT JOIN livros ON autores.id = livros.autor_id;
+

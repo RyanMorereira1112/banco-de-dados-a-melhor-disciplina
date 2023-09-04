@@ -155,3 +155,8 @@ SELECT livros.titulo, autores.nome AS autor
 FROM livros
 JOIN autores ON livros.autor_id = autores.id;
 
+--Liste todos os alunos e os cursos em que estão matriculados.
+SELECT alunos.nome, matriculas.curso
+FROM alunos
+LEFT JOIN matriculas ON alunos.id = matriculas.aluno_id;
+

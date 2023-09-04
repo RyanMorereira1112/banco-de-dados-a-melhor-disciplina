@@ -101,4 +101,6 @@ INSERT INTO vendas (produto, receita) VALUES
 -- Selecione todos os títulos de livros na tabela livros.
 SELECT titulo FROM livros;
 
+-- Selecione todos os nomes de autores nascidos antes de 1900.
+SELECT nome FROM autores WHERE nascimento < '1900-01-01';
 

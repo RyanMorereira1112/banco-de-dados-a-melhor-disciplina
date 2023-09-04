@@ -190,3 +190,9 @@ GROUP BY produto
 ORDER BY receita_total ASC
 LIMIT 1;
 
+--Liste os autores e a receita total gerada com base nos livros vendidos, assumindo que cada livro gere uma receita fixa de $20 (usando JOIN e funções de agregação).
+SELECT autores.nome, SUM(20) AS receita_total
+FROM autores
+LEFT JOIN livros ON autores.id = livros.autor_id
+GROUP BY autores.nome;
+

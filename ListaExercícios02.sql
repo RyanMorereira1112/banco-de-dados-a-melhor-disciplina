@@ -173,3 +173,12 @@ VALUES (1, 1),
     (8, 18),
     (9, 19),
     (10, 20);
+
+    DELIMITER //
+CREATE PROCEDURE sp_ListarAutores()
+BEGIN
+    SELECT * FROM Autor;
+END //
+DELIMITER ;
+
+CALL sp_ListarAutores();

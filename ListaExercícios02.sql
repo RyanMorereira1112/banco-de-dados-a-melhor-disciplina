@@ -294,3 +294,13 @@ DELIMITER ;
 
 CALL sp_AutorMaisAntigo(@autorMaisAntigo);
 SELECT @autorMaisAntigo;
+
+DELIMITER //
+CREATE PROCEDURE sp_ListarAutoresNovo()
+BEGIN
+    -- Esta stored procedure lista todos os autores no banco de dados.
+    SELECT * FROM Autor;
+END //
+DELIMITER ;
+
+CALL sp_ListarAutoresNovo();

@@ -223,3 +223,12 @@ DELIMITER ;
 
 CALL sp_VerificarLivrosCategoria('Ciência', @possuiLivros);
 SELECT @possuiLivros;
+
+DELIMITER //
+CREATE PROCEDURE sp_LivrosAteAno(IN anoLimite INT)
+BEGIN
+    SELECT * FROM Livro WHERE Ano_Publicacao <= anoLimite;
+END //
+DELIMITER ;
+
+CALL sp_LivrosAteAno(2005);

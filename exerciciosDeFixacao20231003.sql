@@ -1,5 +1,7 @@
 -- Professor, acabei enviando os dois arquivos para o mesmo repositório do bimestre passado, infelizmente não foi possível reenviar o link novamente, segue o link abaixo do novo repositório com os mesmos arquivos desse.
 
+-- https://github.com/RyanMorereira1112/BDD-Fixacao
+
 -- Tabela Autor
 CREATE TABLE Autor (
     id INT AUTO_INCREMENT PRIMARY KEY,
